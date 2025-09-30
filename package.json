@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/Nicojerson/Rayuela/issues"
   },
-  "homepage": "https://github.com/Nicojerson/Rayuela#readme"
+  "homepage": "https://github.com/Nicojerson/Rayuela#readme",
+  "type": "module"
 }
