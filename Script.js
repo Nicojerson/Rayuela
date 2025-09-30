@@ -5,7 +5,7 @@ let lectura = []
 
 for (let i = 0; i<listaordenada.length; i ++){
     
-    let lecturadei = fs.readFileSync ("parte" + listaordenada + ".txt", "utf-8")
+    let lecturadei = fs.readFileSync ("parte" + listaordenada[i] + ".txt", "utf-8")
     lectura.push (lecturadei)
 }
 fs.writeFileSync ("TextoCompleto.txt", JSON.stringify(lectura))
