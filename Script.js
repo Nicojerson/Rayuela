@@ -9,3 +9,7 @@ for (let i = 0; i<listaordenada.length; i ++){
     lectura.push (lecturadei)
 }
 fs.writeFileSync ("TextoCompleto.txt", JSON.stringify(lectura))
+
+for (let a=0; a<listaordenada.length; a ++){
+fs.appendFileSync ("orden.txt", listaordenada[a] + "\n") // Puse append en vez de write porque la primera vez que lo hice con write solo me ponia el ultimo valor del array, porque el write sobreescribia los otros valores. Por eso pongo append
+}
